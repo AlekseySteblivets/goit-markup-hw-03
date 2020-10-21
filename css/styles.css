@@ -1,0 +1,169 @@
+/* цвет основного текста */
+/* вторичный цвет текста */
+/* белый */
+/* акцент */
+/* вторичный цвет фона */
+
+/* п.1 подключаем шрифты в файле HTML, а потом normalize.min.css */
+/* п.2 подключаем переменные */
+:root{
+    --main-text-cl: #757575;
+    --accent-cl: #2196F3;
+    --title-text-cl: #212121;
+    --wight-text-cl: #FFFFFF;
+    --bg-dark-cl: #2F303A;
+}
+/* п.3 задаем базовые стили и потом проверяем работают ли */
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-cl);
+}
+
+/* класс для всех ссылок <a>, убираем подчеркивание и задаем цвет */
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link:hover,
+.link:focus,
+.btn:hover,
+.btn:focus{
+    color: var(--accent-cl);
+}
+
+/* класс для заголовка страницы h1 */
+.page-title{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wight-text-cl);
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/* класс для заголовков секций h2 на странице СТУДИО */
+.section-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-cl);
+}
+
+/* класс для заголовка секции -преимущества-  */
+.section-advantages-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-cl);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+/* класс который относится для заголовков h3 на странице студио (имена сотрудников)*/
+.team-name-tittle{
+    font-weight: 500;
+    color: var(--title-text-cl);
+}
+
+/* класс для заголовка страницы h2 на ПОРТФОЛИО */
+.work-card-title{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-cl);
+}
+
+.btn{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-cl);
+    border-radius: 4px;
+}
+
+/* класс для ссылок по страницам в навигации*/
+.menu-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-cl);
+}
+
+/* класс для описания пунктов членов команды*/
+.team-item {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+}
+
+.work-card-item{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-cl);
+}
+
+.dark-bg{
+    background-color: var(--bg-dark-cl);
+}
+
+/* класс убирающий маркировку в списках <ul> */
+.list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.section-contacts {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--wight-text-cl);
+}
+
+.dark-bg .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.link-connection{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+
+.container p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
