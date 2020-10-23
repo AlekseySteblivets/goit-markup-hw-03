@@ -12,6 +12,7 @@
     --title-text-cl: #212121;
     --wight-text-cl: #FFFFFF;
     --bg-dark-cl: #2F303A;
+    --bg-section-cl: #EEEEEE;
 }
 /* п.3 задаем базовые стили и потом проверяем работают ли */
 body{
@@ -20,6 +21,12 @@ body{
     line-height: 1,71;
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: auto;
 }
 
 /* класс для всех ссылок <a>, убираем подчеркивание и задаем цвет */
@@ -58,6 +65,8 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-cl);
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 /* класс для заголовка секции -преимущества-  */
@@ -78,6 +87,8 @@ body{
 .team-name-tittle{
     font-weight: 500;
     color: var(--title-text-cl);
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 /* класс для заголовка страницы h2 на ПОРТФОЛИО */
@@ -161,9 +172,39 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
+    outline: 2px solid tomato;
 }
+
 
 .container p {
     margin-top: 0px;
     margin-bottom: 0px;
+}
+.padding-advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.margin-other-sectioin {
+    margin-bottom: 94px;
+}
+
+.container-our-team{
+    background-color: var(--bg-section-cl);
+    outline: solid tomato;
+    width: 1600px;
+}
+
+.margin-team-title {
+    padding-top: 94px
+}
+
+.team-item > p {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.img-team {
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
