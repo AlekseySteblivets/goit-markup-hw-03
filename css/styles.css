@@ -23,6 +23,32 @@ body{
     color: var(--main-text-cl);
 }
 
+/* стандартный набор стилей для container, еще можно добавить padding left b right
+ если есть*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+    outline: 2px solid tomato;
+}
+h1, 
+h2, 
+h3 {
+    margin-top: 0px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.list{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -52,8 +78,6 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--wight-text-cl);
-    margin-top: 0px;
-    margin-bottom: 30px;
 }
 
 /* класс для заголовков секций h2 на странице СТУДИО */
@@ -65,8 +89,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-cl);
-    margin-top: 0px;
-    margin-bottom: 50px;
 }
 
 /* класс для заголовка секции -преимущества-  */
@@ -78,8 +100,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-cl);
-    margin-top: 0px;
-    margin-bottom: 10px;
 }
 
 
@@ -87,8 +107,6 @@ img {
 .team-name-tittle{
     font-weight: 500;
     color: var(--title-text-cl);
-    margin-top: 0px;
-    margin-bottom: 10px;
 }
 
 /* класс для заголовка страницы h2 на ПОРТФОЛИО */
@@ -102,6 +120,7 @@ img {
 }
 
 .btn{
+    display: inline-block;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -119,7 +138,10 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-cl);
+    margin-right: 50px;
 }
+
+
 
 /* класс для описания пунктов членов команды*/
 .team-item {
@@ -142,12 +164,7 @@ img {
     background-color: var(--bg-dark-cl);
 }
 
-/* класс убирающий маркировку в списках <ul> */
-.list{
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
+
 
 .section-contacts {
     font-weight: normal;
@@ -157,7 +174,7 @@ img {
     color: var(--wight-text-cl);
 }
 
-.dark-bg .link {
+.dark-bg .list .link {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -168,43 +185,58 @@ img {
     letter-spacing: 0.02em;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1170px;
-    outline: 2px solid tomato;
-}
-
-
-.container p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.padding-advantages {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.margin-other-sectioin {
-    margin-bottom: 94px;
-}
-
 .container-our-team{
     background-color: var(--bg-section-cl);
     outline: solid tomato;
     width: 1600px;
 }
 
-.margin-team-title {
-    padding-top: 94px
-}
-
-.team-item > p {
-    padding-top: 0px;
-    padding-bottom: 30px;
-}
-
+/* не нашел что это 
 .img-team {
     margin-top: 0px;
     margin-bottom: 30px;
+}
+*/
+
+.menu {
+    display: inline-flex;
+}
+
+.menu-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.navigation .logo {
+    margin-right: 93px;
+}
+
+.link-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.link-navigation .link-connection:first-child {
+    margin-right: 50px;
+}
+
+.logo {
+    font-family: Raleway; sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-cl);
+}
+
+.part-logo {
+    color: var(--title-text-cl);
 }
