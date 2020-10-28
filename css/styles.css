@@ -261,6 +261,10 @@ img {
     color: var(--title-text-cl);
 }
 
+.part-logo-futer {
+    color: var(--wight-text-cl);
+}
+
 .button-hero {
     width: 200px;
     height: 50px;
@@ -303,6 +307,7 @@ img {
 .border-advanteges {
     margin-right: 30px;
 }
+
 
 .exsamles-works {
     display: flex;
