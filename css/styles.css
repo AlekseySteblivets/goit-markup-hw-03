@@ -30,7 +30,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1170px;
+    width: 1200px;
 }
 
 html {
@@ -75,8 +75,20 @@ img {
     padding-top: 200px;
     padding-right: 452px;
     padding-left: 452px;
-    margin-bottom: 30px;
-    margin-top: 0px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.section-title-exsamples {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-cl);
+    margin-bottom: 50px;
+    margin-top: 0px; 
 }
 
 /* класс для заголовков секций h2 на странице СТУДИО */
@@ -90,6 +102,7 @@ img {
     color: var(--title-text-cl);
     margin-bottom: 50px;
     margin-top: 0px;
+    padding-top: 94px;
 }
 
 /* класс для заголовка секции -преимущества-  */
@@ -137,6 +150,24 @@ img {
     color: var(--title-text-cl);
     border-radius: 4px;
     background-color: var(--bg-section-cl);
+    padding: 0px;
+    margin-right: 8px;
+    border: 0px;
+}
+
+.text-but-portfolio {
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-cl);
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 
 /* класс для ссылок по страницам в навигации*/
@@ -158,23 +189,33 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    background-color: var(--wight-text-cl);
 }
 
-.work-card-item{
+.work-card-item {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
-.dark-bg{
+.dark-bg {
     background-color: var(--bg-dark-cl);
     width: 1600px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.dark-bg-hero {
+    background-color: var(--bg-dark-cl);
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
 }
 
 
@@ -203,6 +244,7 @@ img {
 .container-our-team{
     background-color: var(--bg-section-cl);
     width: 1600px;
+    height: 648px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -262,6 +304,8 @@ img {
 }
 
 .button-hero {
+    display: block;
+    margin: 0 auto;
     width: 200px;
     height: 50px;
     padding-top:  10px;
@@ -272,20 +316,22 @@ img {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    /* padding: 30px;
-    margin: 100px;
-    background-color: #ffeb3b;
-
-    
-    */
+ 
     text-align: center;
-    display: inline-block;
-    margin-left: 700px;
+}
+
+.text-button-hero {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--wight-text-cl);
+    text-align: center;
+    letter-spacing: 0.06em;
 
 }
 
 .section {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -332,10 +378,10 @@ img {
 
 /* класс для  li в сетке */
 .team-item {
-margin-left: 30px;
-margin-top: 30px;
-text-align: center;
-flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .team-item img{
@@ -364,12 +410,25 @@ flex-basis: calc(100% / 4 - 30px);
 .work-item {
     margin-left: 30px;
     margin-top: 30px;
-    text-align: center;
+    text-align: start;
     flex-basis: calc(100% / 3 - 30px);
+    background: var(--wight-text-cl);
+    border: 1px solid var(--bg-section-cl);
+    box-sizing: border-box;
     }
 
-.work-item img {
-    margin-bottom: 20px;
+.content-card {
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    }
+
+.top-line {
+    border-bottom: 1px solid #ECECEC;
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .visually-hidden {
