@@ -32,15 +32,6 @@ body{
     padding-right: 15px;
     width: 1170px;
 }
-h1, 
-h2, 
-h3 {
-    margin-top: 0px;
-}
-
-p {
-    margin: 0px;
-}
 
 html {
     box-sizing: border-box;
@@ -85,6 +76,7 @@ img {
     padding-right: 452px;
     padding-left: 452px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 /* класс для заголовков секций h2 на странице СТУДИО */
@@ -97,6 +89,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--title-text-cl);
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 /* класс для заголовка секции -преимущества-  */
@@ -118,6 +111,7 @@ img {
     font-weight: 500;
     color: var(--title-text-cl);
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 /* класс для заголовка страницы h2 на ПОРТФОЛИО */
@@ -129,6 +123,7 @@ img {
     letter-spacing: 0.06em;
     color: var(--title-text-cl);
     margin-bottom: 4px;
+    margin-top: 0px;
 }
 
 .btn{
@@ -172,6 +167,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
     margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .dark-bg{
@@ -306,8 +302,9 @@ img {
 
 .border-advanteges {
     margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-
 
 .exsamles-works {
     display: flex;
@@ -347,6 +344,7 @@ flex-basis: calc(100% / 4 - 30px);
 
 .team-item p {
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 .exsamples-item {
@@ -393,10 +391,12 @@ flex-basis: calc(100% / 4 - 30px);
 
 .section-contacts h2 {
     margin-bottom: 20px;
+    margin-top: 0px;
 }
 
 .section-contacts p {
     margin-bottom: 9px;
+    margin-top: 0px;
 }
 
 .link-mail {
