@@ -62,6 +62,20 @@ img {
     color: var(--accent-cl);
 }
 
+.but-list .btn:hover,
+.btn:focus{
+    background-color: var(--accent-cl);
+}
+
+
+
+.text-but-portfolio:hover,
+.text-but-portfolio:focus{
+    color: var(--wight-text-cl);
+}
+
+
+
 /* класс для заголовка страницы h1 */
 .page-title{
     font-family: Roboto;
@@ -397,8 +411,6 @@ img {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
 }
 
 .work-item {
@@ -411,6 +423,16 @@ img {
     box-sizing: border-box;
     }
 
+    /* для каждого третьего */
+.work-item:nth-child(3n + 1) {
+    margin-left: 0px;
+}
+
+/*для первых трех элементов*/
+.work-item:nth-child(-n + 3) {
+    margin-top: 0px;
+}
+
 .content-card {
     padding-left: 24px;
     padding-top: 20px;
@@ -420,7 +442,6 @@ img {
 
 .top-line {
     border-bottom: 1px solid #ECECEC;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
