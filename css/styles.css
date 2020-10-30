@@ -18,7 +18,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
 }
@@ -182,7 +182,7 @@ img {
 
 
 
-/* класс для описания пунктов членов команды*/
+/* класс для описания пунктов членов команды /* класс для  li в сетке */
 .team-item {
     font-size: 16px;
     line-height: 1.18;
@@ -190,7 +190,15 @@ img {
     letter-spacing: 0.03em;
     color: inherit;
     background-color: var(--wight-text-cl);
+    margin-right: 30px;
+    text-align: center;
+    width: calc(100% / 4 - 30px);
 }
+
+.team-item:last-child {
+    margin-right: 0px;
+}
+
 
 .work-card-item {
     font-weight: 400;
@@ -204,7 +212,6 @@ img {
 
 .dark-bg {
     background-color: var(--bg-dark-cl);
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -243,7 +250,6 @@ img {
 
 .container-our-team{
     background-color: var(--bg-section-cl);
-    width: 1600px;
     height: 648px;
     margin-left: auto;
     margin-right: auto;
@@ -309,10 +315,6 @@ img {
     width: 200px;
     height: 50px;
     padding-top:  10px;
-    padding-right: 32px;
-    padding-bottom: 10px;
-    padding-left: 32px;
-
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -372,17 +374,9 @@ img {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
 }
 
-/* класс для  li в сетке */
-.team-item {
-    margin-left: 30px;
-    margin-top: 30px;
-    text-align: center;
-    flex-basis: calc(100% / 4 - 30px);
-}
+
 
 .team-item img{
     margin-bottom: 30px;
