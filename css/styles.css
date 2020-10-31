@@ -74,7 +74,12 @@ img {
     color: var(--wight-text-cl);
 }
 
-
+.last-item h3 {
+    margin-right: 0px;
+}
+.last-item p {
+    margin-right: 0px;
+}
 
 /* класс для заголовка страницы h1 */
 .page-title{
@@ -139,6 +144,7 @@ img {
     color: var(--title-text-cl);
     margin-bottom: 10px;
     margin-top: 0px;
+    line-height: 20px;
 }
 
 /* класс для заголовка страницы h2 на ПОРТФОЛИО */
@@ -206,7 +212,6 @@ img {
     background-color: var(--wight-text-cl);
     margin-right: 30px;
     text-align: center;
-    width: calc(100% / 4 - 30px);
 }
 
 .team-item:last-child {
